@@ -5,7 +5,7 @@
 body {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 459px auto repeat(2, 448px) auto 134px;
+  grid-template-rows: 459px auto repeat(2, auto) auto 134px;
   grid-template-areas: "header" "section1" "section2" "section3" "section4" "footer";
 }
 body header {
@@ -14,7 +14,7 @@ body header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("assets/img/Header Background.png"), lightgray -711.152px 0px/343.529% 100% no-repeat;
+  background: url("./assets/img/Header Background.png"), lightgray -711.152px 0px/343.529% 100% no-repeat;
   gap: 24px;
 }
 body header #title-one {
@@ -106,12 +106,14 @@ body #section-one {
 }
 body #section-two {
   grid-area: section2;
+  background-color: #F6F6F6;
 }
 body #section-three {
   grid-area: section3;
 }
 body #section-four {
   grid-area: section4;
+  background-color: #F6F6F6;
 }
 body #section-four h1 {
   color: #23272A;

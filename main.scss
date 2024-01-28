@@ -4,7 +4,7 @@
 body {
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: 459px auto repeat(2, 448px) auto 134px;
+    grid-template-rows: 459px auto repeat(2, auto) auto 134px;
     grid-template-areas:
         "header" "section1" "section2" "section3" "section4" "footer";
 
@@ -87,6 +87,7 @@ body {
 
     #section-two {
         grid-area: section2;
+        background-color:  #F6F6F6;
     }
 
     #section-three {
@@ -95,6 +96,7 @@ body {
 
     #section-four {
         grid-area: section4;
+        background-color:  #F6F6F6;
 
         h1 {
             @include mobile.title-last($fonts-primary: font)
