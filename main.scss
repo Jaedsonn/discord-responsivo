@@ -17,12 +17,24 @@ body {
         background: url("./assets/img/Header\ Background.png"), lightgray -711.152px 0px / 343.529% 100% no-repeat;
         background-size: cover;
         gap: 24px;
+        width: 100%;
+
+        #header-container {
+            display: flex;
+            width: auto;
+            padding: 0px 24px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 24px;
+        }
 
         #title-one {
             @include mobile.title-one($fonts-primary: font);
-            width: 278px;
-            align-self: flex-start;
-            padding: 0 24px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+
         }
 
         #h-description {
@@ -32,8 +44,11 @@ body {
         }
 
         #btn-container {
+            width: 100%;
             display: flex;
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
             flex-wrap: wrap;
             gap: 16px;
 
@@ -66,19 +81,25 @@ body {
         align-items: center;
         gap: 27px;
         padding: 40px 24px;
+        width: 100%;
 
-        img {
-            max-width: 100%;
-        }
+        .text-container {
+            gap: 27px;
 
-        .sub-title {
-            width: 370px;
-            @include mobile.sub-title;
-        }
+            img {
+                max-width: 100%;
+            }
 
-        .sub-description {
-            width: 378px;
-            @include mobile.description-two;
+            .sub-title {
+                width: 370px;
+                @include mobile.sub-title;
+            }
+
+            .sub-description {
+                width: 378px;
+                @include mobile.description-two;
+                text-align: justify;
+            }
         }
     }
 
@@ -88,7 +109,7 @@ body {
 
     #section-two {
         grid-area: section2;
-        background-color:  #F6F6F6;
+        background-color: #F6F6F6;
     }
 
     #section-three {
@@ -97,7 +118,7 @@ body {
 
     #section-four {
         grid-area: section4;
-        background-color:  #F6F6F6;
+        background-color: #F6F6F6;
 
         h1 {
             @include mobile.title-last($fonts-primary: font)
@@ -105,6 +126,7 @@ body {
     }
 
     footer {
+        width: 100%;
         grid-area: footer;
         background-color: mobile.$btn2-background;
         display: flex;
@@ -115,6 +137,128 @@ body {
             width: 162px;
             height: 45px;
             flex-shrink: 0;
+        }
+    }
+}
+
+@media screen and (min-width:491px) {
+    body {
+
+        #header-container {
+            display: flex;
+            width: auto;
+            padding: 0px 24px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+
+            #title-one {
+                @include desktop.title-one($fonts-primary: font);
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            #h-description {
+                @include desktop.description-one($description: font);
+                width: 757px;
+                text-align: center;
+            }
+
+            #btn-container {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 16px;
+
+                #download {
+                    width: 381px;
+                    height: 54px;
+                    flex-shrink: 0;
+                    border-radius: 28px;
+                    background: #FFF;
+                    @include desktop.description-two($description-two: font);
+                    border: none;
+                }
+
+                #open {
+                    width: 381px;
+                    height: 52px;
+                    flex-shrink: 0;
+                    border-radius: 28px;
+                    border: none;
+                    background: desktop.$btn2-background;
+                    @include desktop.description-one($description: font)
+                }
+            }
+        }
+
+        .section {
+            display: flex;
+            width: auto;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            padding: 40px 24px;
+
+            img {
+                max-width: 100%;
+            }
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .sub-title {
+                    width: 370px;
+                    @include desktop.sub-title;
+                }
+
+                .sub-description {
+                    width: 378px;
+                    @include desktop.description-two;
+                    text-align: justify;
+                }
+            }
+
+        }
+
+        #section-four {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h1 {
+                    @include desktop.title-last($fonts-primary: font);
+                    font-size: 60px;
+                    width: auto;
+                    text-align: center;
+                }
+
+                p {
+                    width: 802px;
+                    text-align: center;
+                }
+            }
+        }
+
+        footer {
+            img {
+                width: 230px;
+                height: 63px;
+                flex-shrink: 0;
+            }
         }
     }
 }

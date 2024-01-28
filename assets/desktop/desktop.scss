@@ -23,6 +23,15 @@ $btn2-background:#23272A;
     line-height: normal;
 }
 
+@mixin title-last($fonts-primary: font) {
+    color: $btn2-background;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 @mixin sub-title($sub-title: font) {
     color: #23272A;
     font-family: "Open Sans";
