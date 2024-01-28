@@ -3,7 +3,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: auto;
     grid-template-rows: 506px auto repeat(2, auto) auto 134px;
     grid-template-areas:
         "header" "section1" "section2" "section3" "section4" "footer";
