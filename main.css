@@ -5,7 +5,7 @@
 body {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 459px auto repeat(2, auto) auto 134px;
+  grid-template-rows: 506px auto repeat(2, auto) auto 134px;
   grid-template-areas: "header" "section1" "section2" "section3" "section4" "footer";
 }
 body header {
@@ -15,6 +15,7 @@ body header {
   align-items: center;
   justify-content: center;
   background: url("./assets/img/Header Background.png"), lightgray -711.152px 0px/343.529% 100% no-repeat;
+  background-size: cover;
   gap: 24px;
 }
 body header #title-one {
