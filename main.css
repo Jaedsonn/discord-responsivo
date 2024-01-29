@@ -17,7 +17,6 @@ body header {
   background: url("./assets/img/Header Background.png"), lightgray -711.152px 0px/343.529% 100% no-repeat;
   background-size: cover;
   gap: 24px;
-  width: 100%;
 }
 body header #header-container {
   display: flex;
@@ -93,7 +92,6 @@ body .section {
   align-items: center;
   gap: 27px;
   padding: 40px 24px;
-  width: 100%;
 }
 body .section .text-container {
   gap: 27px;
