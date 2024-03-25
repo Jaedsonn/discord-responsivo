@@ -7,6 +7,7 @@ body {
   grid-template-columns: 1;
   grid-template-rows: 506px auto repeat(2, auto) auto 134px;
   grid-template-areas: "header" "section1" "section2" "section3" "section4" "footer";
+  zoom: 1;
 }
 body header {
   grid-area: header;
@@ -180,7 +181,7 @@ body footer img {
     color: #FFF;
     text-align: center;
     font-family: "Open Sans";
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -202,7 +203,7 @@ body footer img {
     background: #FFF;
     color: #23272A;
     font-family: "Open Sans";
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -218,7 +219,7 @@ body footer img {
     color: #FFF;
     text-align: center;
     font-family: "Open Sans";
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -253,7 +254,7 @@ body footer img {
     width: 378px;
     color: #23272A;
     font-family: "Open Sans";
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

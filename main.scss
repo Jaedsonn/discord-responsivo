@@ -7,6 +7,7 @@ body {
     grid-template-rows: 506px auto repeat(2, auto) auto 134px;
     grid-template-areas:
         "header" "section1" "section2" "section3" "section4" "footer";
+    zoom: 1;
 
     header {
         grid-area: header;
@@ -17,6 +18,7 @@ body {
         background: url("./assets/img/Header\ Background.png"), lightgray -711.152px 0px / 343.529% 100% no-repeat;
         background-size: cover;
         gap: 24px;
+
         #header-container {
             display: flex;
             width: auto;
@@ -79,7 +81,7 @@ body {
         align-items: center;
         gap: 27px;
         padding: 40px 24px;
-       
+
 
         .text-container {
             gap: 27px;

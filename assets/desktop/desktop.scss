@@ -7,7 +7,7 @@ $btn2-background:#23272A;
 @mixin font-primary ($fonts: font) {
     color: #23272A;
     font-family: "Open Sans";
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -45,7 +45,7 @@ $btn2-background:#23272A;
     color: #FFF;
     text-align: center;
     font-family: "Open Sans";
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -54,7 +54,7 @@ $btn2-background:#23272A;
 @mixin description-two($description-two: font) {
     color: #23272A;
     font-family: "Open Sans";
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
